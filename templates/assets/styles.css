@@ -1,0 +1,29 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  body {
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  nav { 
+    height: 80px; 
+    background-color: black; 
+  }
+  header { 
+    height: 805px; 
+    background-color: orange; 
+  }
+  footer { 
+    height: 538px; 
+    background-color: black; 
+  }
+  .container {
+    height: inherit; /* get parent height */
+    width: 970px;   /* add 970px for smaller screen */
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+  }
