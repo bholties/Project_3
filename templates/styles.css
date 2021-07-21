@@ -20,3 +20,10 @@
     height: 538px; 
     background-color: black; 
   }
+  .container {
+    height: inherit; /* get parent height */
+    width: 970px;   /* add 970px for smaller screen */
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+  }
