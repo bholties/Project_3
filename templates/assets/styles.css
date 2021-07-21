@@ -32,3 +32,11 @@
     height: 40px;
     margin: 20px 0; 
   }
+  nav ul {
+    width: 484px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+  }
