@@ -1,17 +1,17 @@
 # import necessary libraries
 # from models import create_classes
 import os
-from flask import (
-    Flask,
-    render_templates,
-    jsonify,
-    request,
-    redirect)
+import sys
+import logging
+from flask import Flask, render_template
+    
 
 #################################################
 # Flask Setup
 #################################################
 app = Flask(__name__)
+app.logger.addHandler(logging.StreamHandler(sys.stdout))
+app.logger.setLevel(logging.ERROR)
 
 #################################################
 # Database Setup
@@ -29,6 +29,7 @@ app = Flask(__name__)
 
 # create route that renders index.html template
 @app.route("/")
+#@app.route('/index')
 def home():
     return render_template("index.html")
 
