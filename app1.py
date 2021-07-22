@@ -1,17 +1,17 @@
 # import necessary libraries
 # from models import create_classes
 import os
-from flask import (
-    Flask,
-    render_templates,
-    jsonify,
-    request,
-    redirect)
+import sys
+import logging
+from flask import Flask, render_template
+    
 
 #################################################
 # Flask Setup
 #################################################
 app = Flask(__name__)
+app.logger.addHandler(logging.StreamHandler(sys.stdout))
+app.logger.setLevel(logging.ERROR)
 
 #################################################
 # Database Setup
@@ -29,9 +29,10 @@ app = Flask(__name__)
 
 # create route that renders index.html template
 @app.route("/")
+#@app.route('/index')
 def home():
     return render_template("index.html")
-    
+
 
 # Query the database and send the jsonified results
 # @app.route("/send", methods=["GET", "POST"])
@@ -46,8 +47,8 @@ def home():
 #         db.session.commit()
 #         return redirect("/", code=302)
 
-#     return render_template("visuals.html")
-#      return render_template("analysis.html")        
+#     return render_template("form.html")
+
 
 # @app.route("/api/pals")
 # def pals():

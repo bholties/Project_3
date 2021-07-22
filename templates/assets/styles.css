@@ -15,7 +15,8 @@
   header { 
     height: 805px; 
     background-color: orange; 
-  }
+
+  }  
   footer { 
     height: 538px; 
     background-color: black; 
@@ -26,7 +27,7 @@
     margin: 0 auto;
     padding: 0 15px;
     display: flex;
-  }
+   }
   .spotify-logo {
     width: 132px;
     height: 40px;
@@ -50,12 +51,19 @@
   nav a:hover {
     color: #1db954;
   }
-  .washu-img {
-    height: inherit;
-    margin: 0 auto;
-    background-image: url(img/washu.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
+  .description-header {
+    /* Positioning */
+    margin-bottom: 0px;
+    font-family: Georgia, Times, "Times New Roman", serif;
   
+    /* Typography */
+    font-size: 32px;
+    font-weight: bold;
+    color: #3bfc01;
+  }
+  article p {
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffe600;
+    text-decoration: none;
+  }
