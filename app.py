@@ -3,7 +3,7 @@
 import os
 from flask import (
     Flask,
-    render_templates,
+    render_template,
     jsonify,
     request,
     redirect)
