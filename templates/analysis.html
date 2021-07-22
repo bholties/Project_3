@@ -14,35 +14,67 @@
     <body>      
        
     </body>
+    <style>
+      body {
+        background-image: url('img/spotify.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+        }
+      </style>
 </html>
   <body>
     <h1 style="color:black;font-size:24px;">Introduction</h1>   
     <br> 
   
-    <p style="color:black;font-size:18px;">
+    <p style="color:white;font-size:18px;">
     We used a spotify dataset that had measurements of explicitiness, danceability,energy,loudness, speechiness, acousticness,<br> and instrumentalness. 
   We wanted to predict what goes into make a song popular or not. </p>
     
   <h1 style="color:black;font-size:24px;">Conclusion</h1>    
     <br> 
   
-    <p style="color:black;font-size:18px;"> In our conclusion we see that energy and danceability were the two main components that go into making a song popular,<br> 
-    and we also found out that loudness was on of the components that made a song less likely to be popular<br> 
+    <p style="color:white;font-size:18px;"> In our conclusion we see that energy and danceability were the two main components that go into making a song popular,<br> 
+    and we also found out that loudness was on of the components that made a song less likely to be popular<br>
+   1.  Acousticness has decreased significantly since 1940 to today's type of music.<br>
+2. Danceability was one of the variables that stayed most consistent throughout our timeline.<br>
+3. Energy seems to be inversely related to Acousticness: It was very low in the first part of the century, but then rose significantly after 1960. It looks like it increased even more after 2000 as well.<br>
   </p> 
 <br>
 <h1 style="color:black;font-size:24px;">Model Type</h1>   
 <br> 
 
-<p style="color:black;font-size:18px;"> We used a linear model regression to predict our data because<br> it was one of the best fit for this model considering
-we have multiple component that we wanted to compare</p> 
-<br> 
+<p style="color:white;font-size:18px;"> We used a linear model regression to predict our data because it was one <br> of the best fits for this model considering
+we have multiple component that <br> we wanted to compare. With our results we came out with the value of 73%.  </p> 
+<br>
+<a target="_blank" href="img/model_code.png">
+  <br>
+  <br>
+  
+  <img src="img/model_code.png" alt="Model Code"
+  height=  150
+  width:= 150>
+</a>
+
+</article>
+
 <br>
 
-<h1 style="color:black;font-size:24px;">Hypothesis</h1>   
-<br> 
+<article>
+  <a target="_blank" href="img/top_5.png">
+    <br>
+    <br>
+    <p><em>Top 5 songs</em></p>
+    <img src="img/top_5.png" alt="Top 5 songs"
+    height=  150
+    width:= 150>
+  </a>
+ 
+  </article>
 
-<p style="color:black;font-size:18px;"> Our hypothesis was that the song’s popularity was dependent on the audio features, such the tempo,loudness,acuostiness<br> 
-and all the other onesbut one thing that we did not include in our training dataset is the lyrics.<br> 
+  <h1 style="color:black;font-size:24px;">Hypothesis</h1>   
+<br> 
+<p style="color:white;font-size:18px;"> Our hypothesis was that the song’s popularity was dependent on the audio features, such the tempo,loudness,acuostiness<br>  etc; but one thing that we did not include in our training dataset is the lyrics.<br> 
 That could perhaps be another area to involve for the future to improve the machine learning models.</p> 
 
 
