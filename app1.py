@@ -3,6 +3,7 @@
 import os
 import sys
 import logging
+from markupsafe import escape
 from flask import Flask, render_template
     
 
@@ -28,10 +29,14 @@ app.logger.setLevel(logging.ERROR)
 # Pet = create_classes(db)
 
 # create route that renders index.html template
-@app.route("/")
-@app.route('templates/index.html')
-def home():
-    return render_template("index.html")
+#@app.route("/")
+# @app.route('templates/index.html')
+#def index():
+    #return 'Index Page'
+    #return f"blah,{escape(name)}!"
+@app.route('/index.html')
+def index():
+    return render_template('index.html')
 
 
 # Query the database and send the jsonified results
