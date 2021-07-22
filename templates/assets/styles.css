@@ -53,11 +53,11 @@
   }
   .description-header {
     /* Positioning */
-    margin-bottom: 33px;
+    margin-bottom: 0px;
     font-family: Georgia, Times, "Times New Roman", serif;
   
     /* Typography */
     font-size: 32px;
     font-weight: bold;
-    color: #4aaaa5;
+    color: #69ec41;
   }
