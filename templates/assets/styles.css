@@ -40,3 +40,21 @@
     align-items: center;
     margin-left: auto;
   }
+  nav a {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  nav li {
+    font-weight: bold;
+  }
+  nav a:hover {
+    color: #1db954;
+  }
+  .washu-img {
+    height: inherit;
+    margin: 0 auto;
+    background-image: url(img/washu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
