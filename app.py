@@ -31,7 +31,7 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     return render_template("index.html")
-
+    
 
 # Query the database and send the jsonified results
 # @app.route("/send", methods=["GET", "POST"])
@@ -46,8 +46,8 @@ def home():
 #         db.session.commit()
 #         return redirect("/", code=302)
 
-#     return render_template("form.html")
-
+#     return render_template("visuals.html")
+#      return render_template("analysis.html")        
 
 # @app.route("/api/pals")
 # def pals():
