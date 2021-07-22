@@ -26,12 +26,22 @@ app = Flask(__name__)
 # db = SQLAlchemy(app)
 
 # Pet = create_classes(db)
-
+ 
 # create route that renders index.html template
 @app.route("/")
-#@app.route('/index')
+@app.route('/index.html')
 def home():
     return render_template("index.html")
+
+# @app.route("/")
+# @app.route('/visuals.html')
+# def home():
+#     return render_template("visuals.html")
+
+# @app.route("/")
+# @app.route('/analysis.html')
+# def home():
+#     return render_template("analysis.html")
 
 # Query the database and send the jsonified results
 # @app.route("/send", methods=["GET", "POST"])
@@ -77,4 +87,4 @@ def home():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
