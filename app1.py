@@ -29,7 +29,7 @@ app.logger.setLevel(logging.ERROR)
 
 # create route that renders index.html template
 @app.route("/")
-#@app.route('/index')
+@app.route('templates/index.html')
 def home():
     return render_template("index.html")
 
