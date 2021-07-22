@@ -29,9 +29,9 @@ app = Flask(__name__)
 
 # create route that renders index.html template
 @app.route("/")
+#@app.route('/index')
 def home():
     return render_template("index.html")
-    
 
 # Query the database and send the jsonified results
 # @app.route("/send", methods=["GET", "POST"])
